@@ -33,7 +33,13 @@ In thee picture we see 4 different components:
 3. VideoList. This component will render the list of video items that have been searched.
 4. VideoItem. This component shows the video preview.
 
-The code of all this components will be inside the `src/components/` folder
+The code of all this components will be inside the `src/components/` folder.
+
+I'm using the [Bulma](https://bulma.io) framework for the style of the app, using it through cdns, checkout the code in the header of the `index.html` file.
+
+All of the components in this branch are function components, It's just the skeleton of the application, later we will see how the components interact with each other and changing to react component to handle behavior and state.
+
+
 
 ## Folder Structure
 
