@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './components/title';
+import SearchBar from './components/search_bar';
+import Video from './components/video';
+import VideoList from './components/video_list';
 
 class App extends Component {
   render() {
@@ -11,9 +14,17 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Title />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <section className="section">
+          <div className="container is-fluid">
+            <SearchBar />
+            <br/>
+            <div className="box">
+              <Video />
+              <hr/>
+              <VideoList />
+            </div>
+            </div>
+        </section>
       </div>
     );
   }
